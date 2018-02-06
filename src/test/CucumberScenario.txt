@@ -1,0 +1,9 @@
+Scenario: Consumer check the product is Nikon D3X compatible
+    Given I am a amazon user
+    When  I enter "Nikon"
+    And   I click 'Go' button
+    Then  I should see Nikon products
+    When  I choose "Price: High to Low" from "Sort by" dropdown
+    Then  I should see products sorted
+    When  I click the second product
+    Then  I should see the product details

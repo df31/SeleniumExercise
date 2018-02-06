@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <parameter name="targetBrowser" value="chrome" />
+    <parameter name="baseUrl" value="http://www.amazon.com" />
+    <parameter name="expectedText" value="Nikon D3X" />
+    <test name="amazonseleniumtest">
+        <classes>
+            <class name="AmazonSeleniumTests.NikonTests">
+                <methods>
+                    <include name="nikonTest1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
