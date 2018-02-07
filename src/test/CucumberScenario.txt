@@ -1,5 +1,5 @@
-Scenario: Consumer check the product is Nikon D3X compatible
-    Given I am a amazon user
+Scenario: User check selected product is Nikon D3X compatible
+    Given I navigates to amazon web page
     When  I enter "Nikon"
     And   I click 'Go' button
     Then  I should see Nikon products
